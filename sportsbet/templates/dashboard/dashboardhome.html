@@ -16,7 +16,7 @@ DASHBOARD HOME
 
     <div class="row">
         <div class="col-lg-6">
-            <a href="{% url 'dashboard:gameroom' %}" class="no-decoration">
+            <a href="{% url 'dashboard:gameroom' 'FIFA' %}" class="no-decoration">
                 <div class="jumbotron select-sport-jumbo">
                     <h1 class = "select-sport-header"><i class="fas fa-futbol rotate"></i> <br> FIFA</h1>
                     <p class = "select-sport-content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem natus magnam, sequi eius amet deserunt error voluptatum quasi quod placeat fugit iusto accusantium nulla. Sed minima exercitationem quo adipisci fuga.</p>
@@ -25,7 +25,7 @@ DASHBOARD HOME
         </div>
 
         <div class="col-lg-6">
-            <a href="#" class="no-decoration">
+            <a href="{% url 'dashboard:gameroom' 'BASEBALL' %}" class="no-decoration">
                 <div class="jumbotron select-sport-jumbo">
                     <h1 class = "select-sport-header"><i class="fas fa-baseball-ball rotate"></i> <br> BASEBALL</h1>
                     <p class = "select-sport-content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem natus magnam, sequi eius amet deserunt error voluptatum quasi quod placeat fugit iusto accusantium nulla. Sed minima exercitationem quo adipisci fuga.</p>
@@ -36,7 +36,7 @@ DASHBOARD HOME
 
     <div class="row">
         <div class="col-lg-6">
-            <a href="#" class="no-decoration">
+            <a href="{% url 'dashboard:gameroom' 'CRICKET' %}" class="no-decoration">
                 <div class="jumbotron select-sport-jumbo" >
                     <h1 class = "select-sport-header"><i class="fas fa-user-alt-slash"></i> <br> CRICKET</h1>
                     <p class = "select-sport-content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem natus magnam, sequi eius amet deserunt error voluptatum quasi quod placeat fugit iusto accusantium nulla. Sed minima exercitationem quo adipisci fuga.</p>
@@ -45,7 +45,7 @@ DASHBOARD HOME
         </div>
 
         <div class="col-lg-6">
-            <a href="#" class="no-decoration">
+            <a href="{% url 'dashboard:gameroom' 'NBA' %}" class="no-decoration">
                 <div class="jumbotron select-sport-jumbo">
                     <h1 class = "select-sport-header"><i class="fas fa-basketball-ball rotate"></i> <br> NBA</h1>
                     <p class = "select-sport-content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem natus magnam, sequi eius amet deserunt error voluptatum quasi quod placeat fugit iusto accusantium nulla. Sed minima exercitationem quo adipisci fuga.</p>

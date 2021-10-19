@@ -2,6 +2,10 @@
     background-color: #ADD8E6 !important;
 }
 
+body{
+    overflow-x: hidden;
+}
+
 
 /* nav styles */
 
@@ -130,7 +134,46 @@
 
 /* gameroom */
 
+.gameroom-title{
+    margin:2%;
+}
+
 .createteam{
     width: 92%;
     margin: 2% 4%;
+    font-weight: bold;
+}
+
+.gameroom-tc{
+    margin-left: -5%;
+}
+
+.gameroom-desc{
+    margin-bottom: 4%;
+}
+
+.tc{
+    margin:0px;
+    margin-top : -12%;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* FOR SCREEN SIZE */
+@media screen and (max-width: 975px){
+    .gameroom-tc{
+        margin: 0px;
+    }
+
+    .tc{
+        margin : 2px
+    }
 }

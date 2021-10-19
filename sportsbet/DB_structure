@@ -1,0 +1,36 @@
+
+
+Sports :
+    sportname:
+    sports_desc : 
+    
+
+
+
+
+
+Teams
+
+
+
+
+
+
+
+
+PLAYERS:
+
+
+
+
+
+
+
+GAME : 
+
+sport ---> foreignkey of sport
+date and time -----> datetime field
+type of match -----> character field
+team1 ------------> foreignkey team
+team2 ------------> foreignkey team
+

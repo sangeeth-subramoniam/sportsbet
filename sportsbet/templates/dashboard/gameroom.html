@@ -23,8 +23,7 @@ DASHBOARD HOME
     <div class="col-lg-7">
         <div class="container">
             <div class="jumbotron">
-                <button class="btn btn-outline-secondary createteam">CREATE TEAM</button>
-                <button class="btn btn-outline-secondary createteam">AVAILABLE MATCHES</button>
+                <a href="{% url 'match:matchhome' 'cricket' %}"><button class="btn btn-outline-secondary createteam">AVAILABLE MATCHES</button></a>
                 <button class="btn btn-outline-secondary createteam">FUT 21</button>
             </div>
         </div>
@@ -34,8 +33,9 @@ DASHBOARD HOME
     <div class="col-lg-5">
         <div class="container">
             <div class="jumbotron gameroom-tc">
-                <h1 class="center-align tc"> T&C </h1>
+                <h1 class="center-align tc-head"> T&C </h1>
                 <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores error unde nulla aut voluptates ratione, molestias in eligendi magni ut illo officia non exercitationem a amet quod quasi modi at, ab cum placeat omnis velit rerum accusamus. <br> Nihil dicta ea facere, illum sed ut veritatis eum dolores corporis neque nulla consequuntur officiis vero assumenda laudantium labore totam suscipit expedita, quam aliquam unde rerum facilis? <br> Ad nihil ipsum sequi reiciendis fugit. Fugiat minus qui, assumenda placeat pariatur, ullam exercitationem veritatis dolorum magnam eius aut atque doloremque.</p>
+                <a href="{% url 'dashboard:policystatement' %}"> <h5 class="center-align"><i class="fas fa-angle-left"></i> Read More <i class="fas fa-angle-right"></i></h5> </a>
             </div>
         </div>
     </div>

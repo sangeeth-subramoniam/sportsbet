@@ -6,6 +6,18 @@ body{
     overflow-x: hidden;
 }
 
+.footer{
+    background-color: black;
+    height: 70px;
+    max-height: 70px;
+    padding: 5px;
+}
+
+.footer-text{
+    margin-top: 20px;
+    color: White;
+}
+
 
 /* nav styles */
 
@@ -152,15 +164,64 @@ body{
     margin-bottom: 4%;
 }
 
-.tc{
-    margin:0px;
+.tc-head{
     margin-top : -12%;
+}
+
+
+/* for team create */
+
+.football-team-create{
+    width: 100%;
+    height:550px;
+    background-image: url("../backgrounds/footballbg.jpg");
+    background-size:cover;
+    background-repeat:no-repeat;
+    background-position:center center;   
+    margin: 05% 07%;
+}
+
+.cricket-team-create{
+    width: 100%;
+    height:550px;
+    background-image: url("../backgrounds/cricketbg.jpg");
+    background-size:cover;
+    background-repeat:no-repeat;
+    background-position:center center;   
+    margin: 05% 07%;
+}
+
+.cricket-teamselect{
+    margin: 20px;
+    padding: 20px;
+}
+
+.cricket-teamselect-current{
+    margin: 3% 5%;
+    width: 90%;
+    min-height: 200px;
+    border-radius: 20px;
+    padding: 40px;
+    background-color: #ADD8E6;
+}
+
+.match-listings{
+    margin: 20px;
+    padding: 20px;
 }
 
 
 
 
+/* cricket box styles */
 
+.pdt-box {
+	margin: 30px 0px;
+}
+
+.pdt-box:hover {
+	transform: scale(1.1);
+}
 
 
 

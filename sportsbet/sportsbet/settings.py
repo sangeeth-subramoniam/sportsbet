@@ -17,7 +17,7 @@ import os
 BASE_DIR = Path(__file__).resolve().parent.parent
 TEMPLATE_DIR = os.path.join(BASE_DIR,"templates")
 STATIC_DIR = os.path.join(BASE_DIR,"static")
-MEDIA_DIR = os.path.join(BASE_DIR, 'media')
+MEDIA_DIR = os.path.join(BASE_DIR,'media')
 
 
 # Quick-start development settings - unsuitable for production
@@ -45,6 +45,8 @@ INSTALLED_APPS = [
     'homepage',
     'registration',
     'dashboard',
+    'structure',
+    'team',
 ]
 
 MIDDLEWARE = [
@@ -133,15 +135,13 @@ STATIC_URL = '/static/'
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 STATIC_URL = '/static/'
- 
+
 STATICFILES_DIRS = [
     STATIC_DIR,
 ]
- 
- 
+
 #MEDIA
 MEDIA_ROOT = MEDIA_DIR
 MEDIA_URL = '/media/' 
- 
- 
+
 LOGIN_URL = 'user_login'

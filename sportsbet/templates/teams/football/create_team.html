@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+{% extends "base.html" %}
+{% load static %}
+
+{% block title %}
+
+Create Team
+
+{% endblock %}
+
+{% block body %}
+
+<h1 class="center-align">Create Team </h1>
+
+<div class="football-teamselect">
+    <h3>Team 1</h3>
+    {% for players in team1 %}
+        <li>{{players.playername}}</li>
+    {% endfor %}
+</div>
+
+<div class="container football-team-create">
+
+
+</div>
+
+{% endblock %}

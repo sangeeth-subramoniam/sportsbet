@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+{% extends "base.html" %}
+{% load static %}
+
+{% block title %}
+
+Match List
+
+{% endblock %}
+
+{% block body %}
+
+<div>
+
+    <h1 class="center-align">Match List</h1>
+
+    <div class="container">
+        <div class="jumbotron">
+            {% for match in matches %}
+            <div class="match-listings">    
+                <a href="{% url 'team:cricket_team_create' match.id %}" class="no-decoration">
+                        <h4><li>{{match.matchdesc}} - {{match.matchtype}}</li></h4> 
+                        <b style="float: left;"> {{match.team1}} vs {{match.team2}} </b>
+                        <b style="float: right;"> {{match.start}} </b>
+                        <br>
+                </a>
+            </div>
+            {% endfor %}
+            
+        </div>
+    </div>
+
+
+
+</div>
+
+{% endblock %}

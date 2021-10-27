@@ -13,3 +13,6 @@ def gameroom(request,pk):
         'sport' : sport
     }
     return render(request, 'dashboard/gameroom.html' , context)
+
+def policystatement(request):
+    return render(request, 'policy/policy_statement.html')

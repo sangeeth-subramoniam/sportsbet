@@ -21,5 +21,7 @@ urlpatterns = [
     path('', include('homepage.urls') ),
     path('register/', include('registration.urls') ),    
     path('dashboard/', include('dashboard.urls') ),
+    path('teams/', include('team.urls') ),
+    path('matches/', include('match.urls') ),
 
 ]

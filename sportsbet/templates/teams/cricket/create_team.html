@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+{% extends "base.html" %}
+{% load static %}
+
+{% block title %}
+
+Create Team
+
+{% endblock %}
+
+{% block body %}
+
+<h1 class="center-align">{{ cur_match.matchdesc }} - {{ cur_match.matchtype }}</h1>
+<h3 class="center-align">{{cur_match.team1}} vs {{cur_match.team2}}</h3>
+
+<h4 class="center-align">Create Team </h4>
+
+<div class="cricket-teamselect jumbotron">
+
+<div class="row">
+    <div class="col-lg-3">
+        <h3>Wicket Keeper</h3>
+        {% for players in wkt %}
+            <li>{{players.playername}}  <a class="add-to-squad" href="{% url 'team:cricket_add_to_squad' playerid=players.id matchid=cur_match.id %}"><i class="fas fa-arrow-right"></i> </a> </li>
+        {% endfor %}
+    </div>
+
+    <div class="col-lg-3">
+        <h3>All Rounder</h3>
+        {% for players in all %}
+            <li>{{players.playername}}  <a class="add-to-squad" href="{% url 'team:cricket_add_to_squad' playerid=players.id matchid=cur_match.id %}"><i class="fas fa-arrow-right"></i> </a> </li> 
+        {% endfor %}
+    </div>
+
+    <div class="col-lg-3">
+        <h3>Batsman</h3>
+        {% for players in bat %}
+            <li>{{players.playername}}  <a class="add-to-squad" href="{% url 'team:cricket_add_to_squad' playerid=players.id matchid=cur_match.id %}"><i class="fas fa-arrow-right"></i> </a> </li> 
+        {% endfor %}
+    </div>
+
+    <div class="col-lg-3">
+        <h3>Bowler</h3>
+        {% for players in bow %}
+            <li>{{players.playername}}  <a class="add-to-squad" href="{% url 'team:cricket_add_to_squad' playerid=players.id matchid=cur_match.id %}"><i class="fas fa-arrow-right"></i> </a> </li> 
+        {% endfor %}
+    </div>
+</div>
+<div class="cricket-teamselect-current">
+        <h3 class = "center-align">MY SQUAD </h3>
+            {% for players in mysquad %}
+                <div class="row">
+                    <b><a class="add-to-squad" href="{% url 'team:cricket_add_to_squad' playerid=players.id matchid=cur_match.id %}"><i class="fas fa-times" style="margin-left:3px ;"></i> </a>  <span style="float: left;">  {{players.playername}} {{ players.position }}</span></b>
+                </div>
+            {% endfor %}        
+    </div>    
+</div>
+
+<div class="container cricket-team-create">
+
+    <div class="row">
+            
+        {% for pdt in mysquad %}
+                <div class="col-lg-4 pdt-box"  style="background: #faf9f9; padding:15px">
+                    <a href="#">
+                    <img class="thumbnail" src={{pdt.picture.url}}>
+                    <div class="box-element product">
+                        <h6><strong>Player : {{pdt.playername}} - {{pdt.created_at}}</strong></h6>
+                        <hr></a>
+
+                <a href="#"> <button  class="btn btn-outline-secondary add-btn">Remove From Squad</button></a>
+                <a class="btn btn-outline-success" href="#">View</a>
+                <h4 style="display: inline-block; float: right"><strong>₹{{pdt.unit_price}}</strong></h4>
+
+                    </div>
+                </div>
+            <br> 
+            <br><br><br><br>
+        {% endfor %}
+    </div>
+
+</div>
+
+{% endblock %}

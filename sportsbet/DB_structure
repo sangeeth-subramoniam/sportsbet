@@ -2,35 +2,36 @@
 
 Sports :
     sportname:
-    sports_desc : 
-    
+    sports_desc :
 
-
-
-
-
-Teams
-
-
-
-
-
-
-
+Teams:
+    sport
+    teamname
+    teamdesc
+    createdat
+    updated at
 
 PLAYERS:
+    sport
+    team
+    playername
+    player desc
+    age
+    
+    createdat
+    updatedat
+
+    ----> position
+    ----> map position (1 : batsman , 2 : middleorder , 3 : tailender)
+    ----> inmatch = charlist {0} ; set to match id
 
 
-
-
-
-
-
-GAME : 
+match : 
 
 sport ---> foreignkey of sport
 date and time -----> datetime field
 type of match -----> character field
 team1 ------------> foreignkey team
 team2 ------------> foreignkey team
+venue
 
